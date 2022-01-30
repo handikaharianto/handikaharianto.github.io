@@ -1,0 +1,121 @@
+.hero {
+  @include respond-to('small') {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  &__container {
+    display: grid;
+    align-items: center;
+    gap: 0 2em;
+    width: 90%;
+    max-width: 1200px;
+    padding-bottom: 8em;
+    margin: 0 auto;
+
+    @include respond-to('small') {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 0;
+    }
+  }
+
+  &__avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+    @include respond-to('small') {
+      min-height: auto;
+    }
+  }
+
+  &__img-container {
+    position: relative;
+    width: 85%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    border-radius: 50%;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+
+  &__circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    z-index: -1;
+
+    &--blue {
+      top: -18px;
+      left: 15px;
+      background-color: $clr-blue;
+      box-shadow: 5px -5px 20px $clr-blue;
+    }
+
+    &--cream {
+      top: 18px;
+      left: -15px;
+      background-color: $clr-cream;
+      box-shadow: -5px 5px 20px $clr-cream;
+    }
+  }
+
+  &__text {
+    font-size: 2.2rem;
+    font-weight: 400;
+    text-align: center;
+
+    @include respond-to('small') {
+      text-align: left;
+    }
+
+    @include respond-to('medium') {
+      font-size: 2.4em;
+    }
+
+    .bold {
+      display: block;
+      font-weight: 700;
+
+      @include respond-to('small') {
+        font-size: 3.2rem;
+      }
+    }
+  }
+
+  &__line {
+    position: absolute;
+
+    width: 4px;
+    height: 150%;
+    background-color: $clr-black;
+    transform: rotate(30deg);
+    z-index: -1;
+
+    &:nth-child(1) {
+      top: -4rem;
+      right: 12rem;
+    }
+
+    &:nth-child(2) {
+      top: -5rem;
+      right: 9rem;
+    }
+
+    &:nth-child(3) {
+      top: -6rem;
+      right: 6rem;
+    }
+  }
+}
