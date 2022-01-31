@@ -255,3 +255,49 @@ li {
   top: -6rem;
   right: 6rem;
 }
+
+.about__container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 11em 0;
+}
+
+.about__desc {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.about__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.3em;
+  margin-top: 2.5em;
+}
+
+.about__socials svg {
+  width: 25px;
+}
+
+.about__social-link {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #0b0a0c;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.about__social-link:hover {
+  background-color: #3452ff;
+}

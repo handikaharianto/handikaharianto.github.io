@@ -1,0 +1,40 @@
+.about {
+  &__container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 11em 0;
+  }
+
+  &__desc {
+    font-size: 1.6rem;
+
+    text-align: center;
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3em;
+    margin-top: 2.5em;
+
+    svg {
+      width: 25px;
+    }
+  }
+
+  &__social-link {
+    display: grid;
+    place-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: $clr-black;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: $clr-blue;
+    }
+  }
+}
