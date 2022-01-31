@@ -3,6 +3,7 @@
   width: 100vw;
   background-color: transparent;
   transition: all 0.3s ease;
+  z-index: 3;
 
   &--active {
     background-color: $clr-white;
