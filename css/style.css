@@ -31,12 +31,12 @@ li {
   position: fixed;
   width: 100vw;
   background-color: transparent;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
   z-index: 3;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
-.navbar--active {
+.navbar--fixed {
   background-color: #fff;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
