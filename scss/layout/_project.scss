@@ -1,0 +1,142 @@
+.project {
+  &__container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    color: $clr-grey;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.05em;
+    margin-bottom: 2em;
+  }
+
+  &__desc {
+    font-size: 1.6em;
+    text-align: center;
+  }
+
+  &__list {
+    display: grid;
+    gap: 4em;
+    padding: 4em 0;
+  }
+
+  &__card {
+    position: relative;
+    display: grid;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+    @include respond-to('small') {
+      grid-template-columns: repeat(12, 1fr);
+      align-items: center;
+      box-shadow: none;
+
+      &:nth-child(odd) .project__img-container {
+        grid-column: 1/8;
+      }
+
+      &:nth-child(even) .project__img-container {
+        grid-column: 6/-1;
+      }
+
+      &:nth-child(odd) .project__content {
+        right: 0;
+        text-align: right;
+      }
+
+      &:nth-child(even) .project__content {
+        left: 0;
+        text-align: left;
+      }
+
+      &:nth-child(odd) .project__stack {
+        justify-content: flex-end;
+      }
+
+      &:nth-child(even) .project__stack {
+        justify-content: flex-start;
+      }
+    }
+  }
+
+  &__img-container {
+    @include respond-to('medium') {
+      height: 350px;
+    }
+  }
+
+  &__img {
+    display: block;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+
+    @include respond-to('small') {
+      border-radius: 10px;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    }
+  }
+
+  &__content {
+    padding: 1em;
+
+    @include respond-to('small') {
+      position: absolute;
+      width: 60%;
+      padding: 0;
+    }
+  }
+
+  &__name {
+    margin-bottom: 0.7em;
+    font-size: 1.4rem;
+    font-weight: 600;
+
+    a {
+      color: $clr-black;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: $clr-blue;
+      }
+    }
+  }
+
+  &__text {
+    @include respond-to('small') {
+      border-radius: 10px;
+      padding: 1em;
+      color: $clr-white;
+      background-color: $clr-black;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    }
+  }
+
+  &__stack {
+    display: flex;
+    gap: 0.7em;
+    margin-top: 0.7em;
+  }
+
+  &__links {
+    margin-top: 0.7em;
+  }
+
+  &__link {
+    color: $clr-black;
+    transition: all 0.3s ease;
+
+    &-logo {
+      width: 22px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+  }
+}
