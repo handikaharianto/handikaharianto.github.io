@@ -55,15 +55,73 @@
   }
 
   &__container {
-    padding: 6em 5em;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 6em 2em;
+
+    @include respond-to('small') {
+      padding: 6em 5em;
+    }
+  }
+
+  &__menu {
+    flex-grow: 1;
   }
 
   &__title {
+    margin-bottom: 1em;
     color: $clr-grey;
 
     &-menu {
       font-size: 1.2rem;
       font-weight: 600;
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
+  }
+
+  &__link {
+    position: relative;
+    display: block;
+    color: $clr-black;
+    font-size: 1.9rem;
+    transition: all 0.4s ease;
+
+    &:hover {
+      padding-left: 0.7em;
+      color: $clr-blue;
+      background-color: $clr-light-grey;
+
+      &::after {
+        height: 100%;
+      }
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 2px;
+      height: 0;
+      background-color: $clr-blue;
+      transition: all 0.4s ease;
+    }
+  }
+
+  &__email-link {
+    border-bottom: 1px solid $clr-grey;
+    color: $clr-black;
+    font-size: 1.1rem;
+    transition: all 0.4s ease;
+
+    &:hover {
+      border-bottom-color: transparent;
     }
   }
 }
