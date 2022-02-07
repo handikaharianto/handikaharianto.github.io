@@ -503,6 +503,7 @@ li {
   width: 90%;
   max-width: 1000px;
   margin: 0 auto;
+  padding: 2em 0 2em 0;
 }
 
 .project__title {
