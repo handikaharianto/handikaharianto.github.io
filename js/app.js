@@ -3,7 +3,7 @@ import displaySkillList from './displaySkillList.js'
 import setFixedHeader from './setFixedHeader.js'
 import setTypewriterEffect from './setTypewriterEffect.js'
 import { openSidebar, closeSidebar } from './toggleSidebar.js'
-import scrollto from './scrollTo.js'
+import scrollto from './scrollto.js'
 
 const navbarBtns = document.querySelector('.navbar__buttons')
 const sidebarBg = document.querySelector('.sidebar-background')
