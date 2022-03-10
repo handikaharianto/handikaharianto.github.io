@@ -38,13 +38,18 @@ function displayProjectList() {
                     alt="Github"
                   />
                 </a>
-                <a class="project__link" href=${website} target="_blank">
-                  <img
-                    class="project__link-logo"
-                    src="../images/external-link.svg"
-                    alt="Link"
-                  />
-                </a>
+                ${
+                  website
+                    ? `
+                    <a class="project__link" href=${website} target="_blank">
+                      <img
+                        class="project__link-logo"
+                        src="../images/external-link.svg"
+                        alt="Link"
+                      />
+                    </a>`
+                    : ''
+                }
               </div>
             </div>
           </article>

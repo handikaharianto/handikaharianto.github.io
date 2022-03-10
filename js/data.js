@@ -1,5 +1,12 @@
 export const projects = [
   {
+    name: 'Budgeting App',
+    text: 'A budgeting app to help the end users be more mindful of how they spend their money so that unnecessary impulse purchases can be avoided at all cost.',
+    image: '../images/preview-budgeting-app.PNG',
+    techStack: ['React', 'Material UI', 'Firebase'],
+    github: 'https://github.com/klm4life/BudgetingApp',
+  },
+  {
     name: 'Movie Search',
     text: 'A web-based movie search that provides the user with the movie information using OMDb API.',
     image: '../images/preview-omdb-api.png',
