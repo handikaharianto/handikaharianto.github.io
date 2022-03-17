@@ -1,10 +1,26 @@
 export const projects = [
   {
+    name: 'URL Shortener',
+    text: 'A full stack web application that allows the end users to truncate the specified URLs.',
+    image: '../images/preview-url-shortener.png',
+    techStack: ['MongoDB', 'ExpressJS', 'React', 'NodeJS'],
+    github: 'https://github.com/handikaharianto/url-shortener',
+    website: 'https://shrt-ner.herokuapp.com/',
+  },
+  {
     name: 'Budgeting App',
     text: 'A budgeting app to help the end users be more mindful of how they spend their money so that unnecessary impulse purchases can be avoided at all cost.',
     image: '../images/preview-budgeting-app.PNG',
     techStack: ['React', 'Material UI', 'Firebase'],
     github: 'https://github.com/klm4life/BudgetingApp',
+  },
+  {
+    name: 'Covid-19 Tracker',
+    text: 'Developed a Covid-19 Tracker that displays Covid-19 information.',
+    image: '../images/preview-covid-19-tracker.png',
+    techStack: ['HTML', 'Sass', 'JavaScript', 'React'],
+    github: 'https://github.com/handikaharianto/covid19-tracker',
+    website: 'https://han-covid-19-tracker.netlify.app/',
   },
   {
     name: 'Movie Search',
