@@ -18,7 +18,9 @@ function displayProjectList() {
             </div>
             <div class="project__content">
               <h4 class="project__name">
-                <a href=${website} target="_blank">${name}</a>
+                <a href=${
+                  website ? website : github
+                } target="_blank">${name}</a>
               </h4>
               <p class="project__text">
                 ${text}

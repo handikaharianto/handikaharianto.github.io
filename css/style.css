@@ -522,7 +522,7 @@ li {
 .project__list {
   display: -ms-grid;
   display: grid;
-  gap: 4em;
+  gap: 7em;
   padding: 4em 0;
 }
 
